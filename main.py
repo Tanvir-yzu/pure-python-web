@@ -9,7 +9,6 @@ PORT = 8080
 DATABASE = 'todo.db'
 
 def create_database():
-    """Create the database, users, and tasks tables if they do not exist."""
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
     # Create users table
